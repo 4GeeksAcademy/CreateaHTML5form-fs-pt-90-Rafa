@@ -17,7 +17,7 @@
 </head>
 
 <body class="body-text mt-3">
-    <form class="container border border-dark-subtle rounded-1">
+    <form action="submit.html" method="get" class="container border border-dark-subtle rounded-1">
         <div class="row">
             <h3 class="col-12 p-2 bg-light-subtle border border-bottom">Payment form example</h3>
         </div>
@@ -26,42 +26,42 @@
         <div class="row"> <!--BEGINNING CARD DETAILS-->
             <div class="mb-3 col-5">
                 <label for="Card #" class="form-label">Card #</label>
-                <input type="number" class="form-control" id="Card #" placeholder="XXXXXXXXXXXXX">
+                <input type="number" class="form-control" name="Card number" id="Card #" placeholder="XXXXXXXXXXXXX">
             </div>
             <div class="mb-3 col-3">
                 <label for="CVC #" class="form-label">CVC #</label>
-                <input type="number" class="form-control" id="CVC #" placeholder="000">
+                <input type="number" class="form-control" name="CVC1" id="CVC #" placeholder="000">
             </div>
             <div class="mb-3 col-4">
                 <label for="Amount">Amount</label>
                 <div class="input-group mb-1 mt-2">
                     <span class="input-group-text" id="basic-addon1">$</span>
-                    <input type="text" class="form-control" placeholder="Amount">
+                    <input type="text" class="form-control" name="Amount1" placeholder="Amount">
                 </div>
             </div>
         </div> <!--END CARD DETAILS-->
         <div class="row"> <!--BEGINNING NAME-->
             <div class="mb-3 col-6">
                 <label class="form-label" for="First Name">First Name</label>
-                <input type="text" class="form-control" id="First Name">
+                <input type="text" class="form-control" name="FirstName1" id="First Name">
             </div>
             <div class="mb-3 col-6">
                 <label class="form-label" for="Last Name">Last Name</label>
-                <input type="text" class="form-control" id="Last Name">
+                <input type="text" class="form-control" name="LastName1" id="Last Name">
             </div>
         </div> <!--END OF NAME-->
         <div class="row"> <!--BEGINNING LOCATION-->
             <div class="mb-3 col-6">
                 <label class="form-label" for="City">City</label>
-                <input type="text" class="form-control" id="City">
+                <input type="text" class="form-control" name="City1" id="City">
             </div>
             <div class="mb-3 col-3">
                 <label class="form-label" for="State">State</label>
-                <input type="list" class="form-control" id="State" placeholder="Pick a State">
+                <input type="list" class="form-control" name="State1" id="State" placeholder="Pick a State">
             </div>
             <div class="mb-3 col-3">
                 <label class="form-label" for="Postal Code">Postal Code</label>
-                <input type="text" class="form-control" id="Postal Code">
+                <input type="text" class="form-control" name="PostalCode1" id="Postal Code">
             </div>
         </div> <!--END OF LOCATION-->
         <div class="row">
@@ -86,9 +86,9 @@
                                 class="fa-brands fa-cc-paypal"></i></label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                            value="option3">
-                        <label class="form-check-label" for="inlineRadio3"><i
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio4"><i
                                 class="fa-brands fa-cc-apple-pay"></i></label>
                     </div>
                 </div>
@@ -110,7 +110,6 @@
                     <button class="btn btn-primary" type="button">Send</button>
                 </div>
             </div>
-        </div>
         </div>
     </form>
 </body>
